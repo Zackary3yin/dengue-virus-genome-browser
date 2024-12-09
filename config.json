@@ -1,0 +1,366 @@
+{
+  "configuration": {
+    "rpc": {
+      "defaultDriver": "WebWorkerRpcDriver",
+      "drivers": {
+        "MainThreadRpcDriver": {},
+        "WebWorkerRpcDriver": {}
+      }
+    },
+    "logoPath": {
+      "locationType": "UriLocation",
+      "uri": ""
+    }
+  },
+  "plugins": [],
+  "assemblies": [
+    {
+      "name": "dengue_virus_1_NC001477",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_virus_1_NC001477-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_1_NC001477.fasta"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_1_NC001477.fasta.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "dengue_virus_1_NC001477-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "dengue_virus_1_NC001477-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dengue_virus_2_NC001474",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_virus_2_NC001474-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_2_NC001474.fasta"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_2_NC001474.fasta.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "dengue_virus_2_NC001474-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "dengue_virus_2_NC001474-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dengue_virus_3_NC001475",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_virus_3_NC001475-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_3_NC001475.fasta"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_3_NC001475.fasta.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "dengue_virus_3_NC001475-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "dengue_virus_3_NC001475-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dengue_virus_4_NC002640",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "dengue_virus_4_NC002640-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_4_NC002640.fasta"
+          },
+          "faiLocation": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_4_NC002640.fasta.fai"
+          },
+          "metadataLocation": {
+            "locationType": "UriLocation",
+            "uri": "/path/to/fa.metadata.yaml"
+          }
+        },
+        "displays": [
+          {
+            "type": "LinearReferenceSequenceDisplay",
+            "displayId": "dengue_virus_4_NC002640-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+          },
+          {
+            "type": "LinearGCContentDisplay",
+            "displayId": "dengue_virus_4_NC002640-ReferenceSequenceTrack-LinearGCContentDisplay"
+          }
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_virus_1_NC001477_sorted.gff3",
+      "name": "DENV-1 Annotations",
+      "assemblyNames": [
+        "dengue_virus_1_NC001477"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "dengue_virus_1_NC001477_sorted.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_1_NC001477_sorted.gff3.gz.tbi"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "dengue_virus_1_NC001477_sorted.gff3-LinearBasicDisplay",
+          "filters": {
+            "flagIncluded": false,
+            "criteria": [
+              {
+                "type": "lessThan",
+                "key": "end",
+                "value": 10000
+              },
+              {
+                "type": "greaterThan",
+                "key": "start",
+                "value": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_virus_3_NC001475_sorted.gff3",
+      "name": "DENV-3 Annotations",
+      "assemblyNames": [
+        "dengue_virus_3_NC001475"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "dengue_virus_3_NC001475_sorted.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_3_NC001475_sorted.gff3.gz.tbi"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "dengue_virus_3_NC001475_sorted.gff3-LinearBasicDisplay"
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "dengue_virus_3_NC001475_sorted.gff3-LinearArcDisplay"
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_virus_4_NC002640_sorted.gff3",
+      "name": "DENV-4 Annotations",
+      "assemblyNames": [
+        "dengue_virus_4_NC002640"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "dengue_virus_4_NC002640_sorted.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_4_NC002640_sorted.gff3.gz.tbi"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "dengue_virus_4_NC002640_sorted.gff3-LinearBasicDisplay"
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "dengue_virus_4_NC002640_sorted.gff3-LinearArcDisplay"
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "dengue_virus_2_NC001474_sorted.gff3",
+      "name": "DENV-2 Annotations",
+      "assemblyNames": [
+        "dengue_virus_2_NC001474"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "locationType": "UriLocation",
+          "uri": "dengue_virus_2_NC001474_sorted.gff3.gz"
+        },
+        "index": {
+          "location": {
+            "locationType": "UriLocation",
+            "uri": "dengue_virus_2_NC001474_sorted.gff3.gz.tbi"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "dengue_virus_2_NC001474_sorted.gff3-LinearBasicDisplay"
+        },
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "dengue_virus_2_NC001474_sorted.gff3-LinearArcDisplay"
+        }
+      ]
+    }
+  ],
+  "internetAccounts": [],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "dengue_virus_1_NC001477-index",
+      "ixFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_1_NC001477.ix"
+      },
+      "ixxFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_1_NC001477.ixx"
+      },
+      "metaFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_1_NC001477_meta.json"
+      },
+      "assemblyNames": [
+        "dengue_virus_1_NC001477"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "dengue_virus_2_NC001474-index",
+      "ixFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_2_NC001474.ix"
+      },
+      "ixxFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_2_NC001474.ixx"
+      },
+      "metaFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_2_NC001474_meta.json"
+      },
+      "assemblyNames": [
+        "dengue_virus_2_NC001474"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "dengue_virus_3_NC001475-index",
+      "ixFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_3_NC001475.ix"
+      },
+      "ixxFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_3_NC001475.ixx"
+      },
+      "metaFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_3_NC001475_meta.json"
+      },
+      "assemblyNames": [
+        "dengue_virus_3_NC001475"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "dengue_virus_4_NC002640-index",
+      "ixFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_4_NC002640.ix"
+      },
+      "ixxFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_4_NC002640.ixx"
+      },
+      "metaFilePath": {
+        "locationType": "UriLocation",
+        "uri": "trix/dengue_virus_4_NC002640_meta.json"
+      },
+      "assemblyNames": [
+        "dengue_virus_4_NC002640"
+      ]
+    }
+  ],
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  }
+}
