@@ -19,20 +19,20 @@ JBrowse 2 CLI
 
 ### Local Deployment
 1.Clone the repository:
-
+```
   git clone https://github.com/yourusername/dengue-virus-genome-browser.git  
   cd dengue-virus-genome-browser  
-
+```
 
 2.Install JBrowse CLI:
-
+```
   npm install -g @jbrowse/cli  
-
+```
 
 3.Start the browser locally:
-
+```
   jbrowse admin-server --port 9090 --root /path/to/repository  
-
+```
 
 4.Access the browser at http://localhost:9090.
 
@@ -41,9 +41,9 @@ JBrowse 2 CLI
 •Go to Settings > Pages.
 •Set the source to the main branch.
 2.Your genome browser will be available at:
-
+```
   https://yourusername.github.io/dengue-virus-genome-browser/
-
+```
 
 
 ## Genome Data
