@@ -361,6 +361,23 @@
   ],
   "connections": [],
   "defaultSession": {
-    "name": "New Session"
+    "name": "Dengue Virus Genome Browser",
+    "view": {
+      "id": "LinearGenomeView",
+      "type": "LinearGenomeView",
+      "tracks": [
+        "dengue_virus_1_NC001477_sorted.gff3",
+        "dengue_virus_1_NC001477.fasta"
+      ],
+      "displayRegionsFromAssemblyName": "dengue_virus_1_NC001477",
+      "initialDisplayedRegions": [
+        {
+          "assemblyName": "dengue_virus_1_NC001477",
+          "start": 0,
+          "end": 10735,
+          "refName": "NC_001477.1"
+        }
+      ]
+    }
   }
 }
